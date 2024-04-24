@@ -8,9 +8,7 @@ export default defineConfig({
 		port: 3000,
 		proxy: {
 			"/api": {
-				target: "https://backendtalkr.onrender.com",
-				changeOrigin: true,
-				secure: false, // This line ignores SSL certificate errors
+				target: "http://localhost:5000",
 			},
 		},
 	},
